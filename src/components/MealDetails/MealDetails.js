@@ -17,7 +17,7 @@ const MealDetails = () => {
             .then(res => res.json())
             .then(data => setMeal(data.meals[0]))
     }, [mealId])
-    const { strMealThumb, strCategory, strArea, strMeal, strInstructions, strTags } = meal;
+    const { strMealThumb, strCategory, strArea, strMeal, strInstructions, strTags, strYoutube } = meal;
     // let ins = strInstructions.substring(0, 300);
     return (
         <div>
@@ -35,6 +35,7 @@ const MealDetails = () => {
                         {strInstructions}</p>
                     <div className="flex mt-3">
                         <button onClick={handleAllItems} className='bg-purple-400 border-2 rounded-lg text-xl p-2 pl-3 mt-4'>All items</button>
+                        <a target="_blank" rel="noreferrer" href={strYoutube}> <button className='bg-purple-400 border-2 rounded-lg text-xl p-2 pl-3 mt-4 ml-4 text-red-900 font-bold' >Youtube</button></a>
                     </div>
                 </div>
             </div>
