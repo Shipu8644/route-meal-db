@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div>
-            <nav className='text-2xl m-4 bg-purple-50'>
+            <nav className='text-2xl m-4 bg-purple-100 font-serif'>
                 <NavLink activeStyle={activeStyle} to='/home'>Home</NavLink>
                 <NavLink activeStyle={activeStyle} className='m-16' to='/Restaurant'>Restaurant</NavLink>
                 <NavLink activeStyle={activeStyle} to='/About'>About</NavLink>

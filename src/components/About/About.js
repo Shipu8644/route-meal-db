@@ -11,10 +11,10 @@ const About = () => {
 
 
             <ul className='list-disc ml-96 mt-4'>
-                <li >High quality transparent PNG ingredients</li>
-                <li>Meal image uploads</li>
-                <li>Browse meals in sequence</li>
-                <li>Area and Categories</li>
+                <li >High quality transparent PNG ingredients.</li>
+                <li>Meal image uploads.</li>
+                <li>Browse meals in sequence.</li>
+                <li>Area and Categories.</li>
             </ul>
 
 
