@@ -1,11 +1,19 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header';
+import Restaurant from './components/Restaurant/Restaurant';
 
 function App() {
   return (
     <div >
-      <div class="grid  grid-cols-3 grid-rows-3 gap-4">
-
-      </div>
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route path='/'>
+            <Restaurant></Restaurant>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
