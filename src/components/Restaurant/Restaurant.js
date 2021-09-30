@@ -23,7 +23,7 @@ const Restaurant = () => {
             <div className='text-center'>
                 <input onChange={searchHandler} className='border-2 p-1 rounded-lg border-purple-800 text-2xl w-96 mb-16' placeholder='search here' type="text" />
             </div>
-            <div className="grid grid-cols-3 gap-4 ">
+            <div className="grid grid-cols-3 gap-8 container mx-auto p-8">
                 {meals.map(meal => <Meal
                     key={meal.idMeal}
                     meal={meal}></Meal>)}
