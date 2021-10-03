@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
 
 const About = () => {
+
+
     return (
         <div >
             <p className='container w-10/12'>

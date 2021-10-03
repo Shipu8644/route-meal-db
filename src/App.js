@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
@@ -6,8 +7,12 @@ import MealDetails from './components/MealDetails/MealDetails';
 import NotFound from './components/NotFound/NotFound';
 import Restaurant from './components/Restaurant/Restaurant';
 
+
+
 function App() {
+
   return (
+
     <div >
       <Router>
         <Header></Header>
@@ -35,6 +40,7 @@ function App() {
         </Switch>
       </Router>
     </div>
+
   );
 }
 

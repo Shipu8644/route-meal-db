@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { ApiContext } from '../Restaurant/Restaurant'
 const Meal = (props) => {
+    const getValue = useContext(ApiContext);
+
+
     const { idMeal, strMeal, strMealThumb } = props.meal;
 
     return (
         <div className='class="max-w-sm rounded-lg overflow-hidden shadow-2xl bg-purple-200 flex flex-col items-center' >
+            <img src={getValue} alt="" />
             <img className=' p-2 w-4/5  h-64 ' src={strMealThumb} alt="" />
             <div className='px-6 py-4 text-center text-2xl'>
                 <h1>{idMeal}</h1>
