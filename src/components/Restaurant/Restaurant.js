@@ -28,10 +28,18 @@ const Restaurant = () => {
                 <div className='text-center'>
                     <input onChange={searchHandler} className='border-2 p-1 rounded-lg border-purple-800 text-2xl w-96 mb-16' placeholder='search here' type="text" />
                 </div>
+
+
+
                 <div className="grid grid-cols-4 gap-8 container mx-auto p-8">
-                    {meals.map(meal => <Meal
-                        key={meal.idMeal}
-                        meal={meal}></Meal>)}
+                    {
+                        meals ? meals.map(meal => <Meal
+                            key={meal.idMeal}
+                            meal={meal}></Meal>)
+                            :
+                            <h1 className='text-2xl text-center text-red-600 font-bold  grid grid-cols-none'>Sorry This typeof food  is not Available
+                            </h1>
+                    }
                 </div>
 
 

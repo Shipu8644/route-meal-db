@@ -20,19 +20,19 @@ function App() {
           <Route exact path='/'>
             <Restaurant></Restaurant>
           </Route>
-          <Route exact path='/home'>
+          <Route path='/home'>
             <Restaurant></Restaurant>
           </Route>
-          <Route exact path='/restaurant'>
+          <Route path='/restaurant'>
             <Restaurant></Restaurant>
           </Route>
-
-          <Route exact path='/about'>
+          <Route path='/about'>
             <About></About>
           </Route>
           <Route exact path='/meal/:mealId'>
             <MealDetails></MealDetails>
           </Route>
+
           <Route exact path='*'>
             <NotFound></NotFound>
           </Route>

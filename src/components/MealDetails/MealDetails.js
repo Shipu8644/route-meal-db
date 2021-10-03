@@ -17,9 +17,9 @@ const MealDetails = () => {
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
             .then(res => res.json())
             .then(data => setMeal(data.meals[0]))
-    }, [mealId])
+    }, [])
     const { strMealThumb, strCategory, strArea, strMeal, strInstructions, strTags, strYoutube } = meal;
-    // let ins = strInstructions.substring(0, 300);
+
     return (
         <div>
             <div>
@@ -42,7 +42,7 @@ const MealDetails = () => {
                 <div id="body" className="flex flex-col ml-5">
                     <h4 id="name" className="text-xl font-semibold mb-2">{strMeal}, {strCategory}, {strArea} [{strTags}] </h4>
                     <h4 className='text-xl font-semibold'>Recipe:</h4>
-                    <p id="job" className="text-gray-800 mt-2">
+                    <p className="text-gray-800 mt-2">
                         {strInstructions}</p>
                     <div className="flex mt-3">
                         <button onClick={handleAllItems} className='bg-purple-400 border-2 rounded-lg text-xl p-2 pl-3 mt-4'>All items</button>
